@@ -6,8 +6,12 @@ import VueTyper from 'vue-typer'
 
 Vue.config.productionTip = false
 
+// Use Libraries
 Vue.use(VueTyper)
 Vue.use(VueScrollactive)
+
+// Configure Global Variables
+Vue.prototype.$name = 'Jamie Huang'
 
 new Vue({
 	render: h => h(App),

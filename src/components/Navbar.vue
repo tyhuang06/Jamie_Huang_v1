@@ -2,7 +2,7 @@
 	<scrollactive
 		:offset="0"
 		:class="{ scrolled: !view.atTop }"
-		class="fixed w-full"
+		class="nav fixed z-10 w-full bg-clean"
 	>
 		<div class="flex h-full float-right">
 			<div v-for="item in items" :key="item">
@@ -35,22 +35,22 @@ export default {
 </script>
 
 <style>
-nav {
+.nav {
 	@apply transition-shadow duration-500;
 	height: 56px;
 }
 
-nav.scrolled {
+.nav.scrolled {
 	@apply shadow-lg;
 }
 
 .nav_item {
-	@apply flex flex-initial h-full justify-center items-center text-center uppercase text-gray-600 font-medium tracking-widest px-3 transition;
+	@apply flex flex-initial h-full justify-center items-center text-center uppercase text-gray-500 font-medium tracking-widest px-3 transition;
 	min-width: 90px;
 	max-width: 360px;
 }
 
 .nav_item.is-active {
-	@apply border-b border-blue-900;
+	@apply border-b-2 border-sunshine-blue text-sunshine-blue;
 }
 </style>

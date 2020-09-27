@@ -25,6 +25,7 @@ export default {
 
 <style>
 .container {
+	@apply mx-auto;
 	padding-top: 60px;
 }
 </style>
